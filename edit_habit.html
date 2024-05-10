@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit habit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+         <h1>Edit your habit details </h1>
+    </header>
+
+    <main>
+        <section id= "edit-habit-form-section">
+            <form id= "edit-habit-form" class="habit-form">
+                <input type= "text" id="habit-name" placeholder=" Enter the habit  " required>
+                <textarea id= "habit-description" placeholder=" Habit descriptions "></textarea>>
+                <select id="habit-category">
+                    <option value= "health">Health & fitness</option>
+                    <option value= "work">Work & career</option>
+                    <option value= "education">Education & learning</option>
+                    <option value= "personal">Personal development</option>
+                    <option value= "social">Social & relationships</option>
+                    <option value= "recreation">Recreation & leisure</option>
+                    <option value= "home">Home & daily Life</option>
+                </select>
+                <select id="habit-frequency">
+                    <option value= "daily">Daily</option>
+                    <option value= "weekly">Weekly</option>
+                    <option value= "monthly">Monthly</option>
+                </select>
+                <select id="habit-timeframe">
+                    <option value= "morning">Morning</option>
+                    <option value= "afternoon">Afternoon</option>
+                    <option value= "evening">Evening</option>
+                </select>
+                <select id="habit-difficulty">
+                    <option value= "easy">Easy</option>
+                    <option value= "medium">Medium</option>
+                    <option value= "hard">Hard</option>
+                </select>
+                <select id="habit-type">
+                    <option value= "positive">Positive</option>
+                    <option value= "negative">Negative</option>
+                    <option value= "neutral">Neutral</option>
+                </select>
+                <input type= "text" id="habit-goal" placeholder="Enter a goal" required> 
+                <button type= "submit" class="btn">Update Habit</button>
+            </form>
+        </section>
+    </main>
+    <script src="edit_scripts.js"></script>
+</body>
+</html>

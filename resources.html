@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resource page </title>
+    <link rel="stylesheet" href= "styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href= "index.html">Home</a></li>
+                <li><a href= "motivated.html">Motivation</a></li>
+                <li><a href= "getting_started.html">Getting started</a></li>
+            </ul>
+        </nav>
+        <h1>Resources to help you Succeed</h1>
+        <p>Whether you're starting a new habit or maintaining current ones, the right resources make all the difference.</p>
+    </header>
+
+    <main>
+        <section id="articles" class="resource-category" aria-label="Articles and guides">
+            <h2>Articles & Guides</h2>
+            <ul>
+                <li id="article1" role="listitem">https://jamesclear.com/motivation <div id="rating-article1"></div></li>
+                <li id="article2" role="listitem">https://hbr.org/2023/07/a-guide-to-motivating-yourself-at-work<div id="rating-article2"></div></li>
+                <li id="article3" role="listitem">https://mariopeshev.com/the-complete-motivation-guide/<div id="rating-article3"></div></li>
+            </ul>
+        </section>
+
+        <section id="books" class="resource-category" aria-label="Books">
+            <h2>Books</h2>
+            <ul>
+                <li id="book1" role="listitem">Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones-James Clear<div id="rating-book1"></div><div id="note-book1"></div></li>
+                <li id="book2" role="listitem">The_1_IMPROVEMENT_Mindset-by Kieran O'Connor<div id="rating-book2"></div><div id="note-book2"></div></li>
+                <li id="book3" role="listitem">The Power of Habit-Charles Duhigg<div id="rating-book3"></div><div id="note-book3"></div></li>
+            </ul>
+        </section>
+
+        <section id="tools" class="resource-category" aria-label="Tools and apps">
+            <h2>Tools & Apps</h2>
+            <ul>
+                <li id="tool1" role="listitem">https://clockify.me/habit-tracker-app<div id="rating-tool1"></div> </li>
+                <li id="tool2" role="listitem">https://loophabits.org<div id="rating-tool2"></div> </li>
+                <li id="tool3" role="listitem">https://timelog.link<div id="rating-tool3"></div> </li>
+            </ul>
+        </section>
+
+        <section id="custom-lists" aria-label="Custom Lists">
+            <h2>My custom lists</h2>
+            <button onclick="createNewList()">Create new list</button>
+            <div id="lists-container"></div>
+        </section>
+    </main>
+
+    <script src="resource.js"></script>
+</body>
+</html>

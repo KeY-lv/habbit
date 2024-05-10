@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href= "styles.css">
+</head>
+<body>
+    <!-- Navigācijas josla. -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="resources.html">Resources page</a></li>
+            <li><a href="motivated.html">Get motivated</a></li>
+            <li><a href="getting_started.html">Getting started</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Your Daily Habit Tracker</h1>
+    </header>
+    <main>
+        <!-- Ieraduma sākuma forma -->
+        <section id="habit-form-section">
+            <form id="new-habit-form" class="habit-form">
+                <input type="text" id="habit-name"placeholder="Enter habit name" required>
+                <textarea id="habit-description"placeholder="Habit description"></textarea>
+                <select id="habit-category">
+                    <option value= "health">Health & fitness</option>
+                    <option value= "work">Work & career</option>
+                    <option value= "education">Education & learning</option>
+                    <option value= "personal">Personal development</option>
+                    <option value= "social">Social & relationships</option>
+                    <option value= "recreation">Recreation & leisure</option>
+                    <option value= "home">Home & daily Life</option>
+                </select>
+                <select id="habit-frequency">
+                    <option value= "daily">Daily</option>
+                    <option value= "weekly">Weekly</option>
+                    <option value= "monthly">Monthly</option>
+                </select>
+                <select id="habit-timeframe">
+                    <option value= "morning">Morning</option>
+                    <option value= "afternoon">Afternoon</option>
+                    <option value= "evening">Evening</option>
+                </select>
+                <select id="habit-difficulty">
+                    <option value= "easy">Easy</option>
+                    <option value= "medium">Medium</option>
+                    <option value= "hard">Hard</option>
+                </select>
+                <select id="habit-type">
+                    <option value= "positive"> Positive</option>
+                    <option value= "negative"> Negative</option>
+                    <option value= "neutral"> Neutral</option>
+                </select>
+                <input type="text"id="habit-goal" placeholder="Enter a goal (example:'in 1 years time, get promoted') "required>
+                <button type="submit" class="btn">Add Habit</button>
+            </form>
+        </section>
+
+
+        <!-- Ieraduma sarakste -->
+        <section id="habits-section"> 
+
+            <h2>Your habits</h2>
+            <div id="habits-list" class="habits-list">
+              <!-- Ieraduma sarakstes parādisies šeit -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Savieno ar JS failu -->
+    <script src= "scripts.js"></script>
+</body>
+</html>
